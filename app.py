@@ -260,7 +260,7 @@ if st.session_state.current_page == 'home':
     # Main container with background and styling
 
     # Title and Subtitle
-    # st.markdown("<h1 class='title'>📈 Advanced Stock Price Prediction App 📉</h1>", unsafe_allow_html=True)
+    # st.markdown("<h1 class='title'>📈 StockVision 📉</h1>", unsafe_allow_html=True)
     # st.markdown("<p class='subtitle'>Your Professional Tool for Stock Analysis and Market Insights 🚀</p>", unsafe_allow_html=True)
     # Sample data for candlestick chart (you can replace this with real data or use more points)
     data = {
