@@ -296,7 +296,7 @@ if st.session_state.current_page == 'home':
     
     # Display the chart in Streamlit
     # st.title("Welcome to Stock Market Dashboard")
-    st.markdown("<h1 class='title'>📈 Advanced Stock Price Prediction App 📉</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='title'>📈 StockVision 📉</h1>", unsafe_allow_html=True)
     st.markdown("<p class='subtitle'>Your Professional Tool for Stock Analysis and Market Insights 🚀</p>", unsafe_allow_html=True)
 
     st.plotly_chart(fig)
