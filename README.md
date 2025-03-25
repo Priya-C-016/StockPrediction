@@ -3,6 +3,9 @@
 
 The Stock Market Prediction App is a data-driven project that leverages machine learning and real-time financial data to predict stock prices and trends. It integrates APIs for fetching live stock market data and utilizes visualization tools to help users analyze stock performance.
 
+
+![Alt Text](Dashboard.png)
+
 ## 🔍 Features
 
 Live Stock Data Fetching: Integrated API to retrieve real-time stock market data.
@@ -16,6 +19,12 @@ Data Visualization: Interactive charts for stock trend analysis.
 Technical Indicators: Implemented key indicators like Moving Averages, RSI, MACD, etc.
 
 User Input Support: Allows users to enter stock symbols and get predictions.
+
+![Alt Text](Stock.png)
+
+![Alt Text](stockrecommend.png)
+
+![Alt Text](news.png)
 
 ## 📊 Technologies Used
 
