@@ -42,25 +42,25 @@ Preprocessed data includes date, open price, close price, high, low, volume, and
 🚀 How to Run the Project
 
 Clone the repository:
-
+```
 git clone https://github.com/your-username/stock-prediction-app.git
-
+```
 Navigate to the project directory:
-
+```
 cd stock-prediction-app
-
+```
 Install dependencies:
-
+```
 pip install -r requirements.txt
-
+```
 Run the app:
-
+```
 streamlit run app.py
-
+```
 OR, if using Flask:
-
+```
 python app.py
-
+```
 ## 📈 Insights Gained
 
 Trend Analysis: Identified historical patterns that influence stock prices.
