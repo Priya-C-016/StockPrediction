@@ -1,9 +1,9 @@
 # StockVision
-📌 Overview
+## 📌 Overview
 
 The Stock Market Prediction App is a data-driven project that leverages machine learning and real-time financial data to predict stock prices and trends. It integrates APIs for fetching live stock market data and utilizes visualization tools to help users analyze stock performance.
 
-🔍 Features
+## 🔍 Features
 
 Live Stock Data Fetching: Integrated API to retrieve real-time stock market data.
 
@@ -17,7 +17,7 @@ Technical Indicators: Implemented key indicators like Moving Averages, RSI, MACD
 
 User Input Support: Allows users to enter stock symbols and get predictions.
 
-📊 Technologies Used
+## 📊 Technologies Used
 
 Python (for data analysis and ML modeling)
 
@@ -33,7 +33,7 @@ Yahoo Finance API / Alpha Vantage API (for fetching real-time stock data)
 
 Flask / FastAPI (optional backend for API handling)
 
-📂 Dataset
+## 📂 Dataset
 
 The app retrieves historical stock data using APIs.
 
@@ -61,7 +61,7 @@ OR, if using Flask:
 
 python app.py
 
-📈 Insights Gained
+## 📈 Insights Gained
 
 Trend Analysis: Identified historical patterns that influence stock prices.
 
@@ -71,7 +71,7 @@ Impact of Market Events: Studied how news and financial events affect stock move
 
 Volatility Measurement: Used historical data to assess market risks.
 
-📜 Future Improvements
+## 📜 Future Improvements
 
 Implement deep learning models (LSTM, RNNs) for better time-series forecasting.
 
@@ -81,6 +81,6 @@ Enhance the UI with real-time interactive dashboards.
 
 Provide stock recommendations based on risk assessment and trends.
 
-🏆 Contributions
+## 🏆 Contributions
 
 Feel free to fork this repository and contribute to improve this project! If you have any suggestions, open an issue or create a pull request.
