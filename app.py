@@ -10,7 +10,7 @@ from textblob import TextBlob
 
 # Fetch real-time stock data from Alpha Vantage (monthly data in this case)
 def fetch_stock_data(symbol):
-    API_KEY = 'C3E2CQZKSY213XAE'  # Replace with your Alpha Vantage API key
+    API_KEY = 'NA3UHC1XJU4OQKKO'  # Replace with your Alpha Vantage API key
     url = f'https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol={symbol}&apikey={API_KEY}'
     
     response = requests.get(url)
