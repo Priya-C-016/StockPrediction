@@ -9,32 +9,59 @@ import numpy as np
 from textblob import TextBlob
 
 # Fetch real-time stock data from Alpha Vantage (monthly data in this case)
+# def fetch_stock_data(symbol):
+#     API_KEY = 'NA3UHC1XJU4OQKKO'  # Replace with your Alpha Vantage API key
+#     url = f'https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol={symbol}&apikey={API_KEY}'
+    
+#     response = requests.get(url)
+#     data = response.json()
+    
+#     # Check if the data contains 'Monthly Time Series'
+#     if 'Monthly Time Series' in data:
+#         time_series = data['Monthly Time Series']
+#         # Convert the time series data into a pandas DataFrame
+#         df = pd.DataFrame.from_dict(time_series, orient='index')
+#         df = df[['4. close']]  # We only need the 'close' price
+#         df.columns = ['Close']
+        
+#         # Convert 'Close' column to numeric (float)
+#         df['Close'] = pd.to_numeric(df['Close'], errors='coerce')  # Convert to float, errors='coerce' will turn invalid values to NaN
+        
+#         df.index = pd.to_datetime(df.index)  # Convert the index to datetime
+#         df = df.sort_index()  # Sort by date
+        
+#         return df
+#     else:
+#         print("Error fetching data. Please check the symbol or try again.")
+#         return None
+
 def fetch_stock_data(symbol):
-    API_KEY = 'NA3UHC1XJU4OQKKO'  # Replace with your Alpha Vantage API key
+    API_KEY = 'C3E2CQZKSY213XAE'  # Replace with your API key
     url = f'https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol={symbol}&apikey={API_KEY}'
     
     response = requests.get(url)
-    data = response.json()
     
-    # Check if the data contains 'Monthly Time Series'
-    if 'Monthly Time Series' in data:
-        time_series = data['Monthly Time Series']
-        # Convert the time series data into a pandas DataFrame
-        df = pd.DataFrame.from_dict(time_series, orient='index')
-        df = df[['4. close']]  # We only need the 'close' price
-        df.columns = ['Close']
-        
-        # Convert 'Close' column to numeric (float)
-        df['Close'] = pd.to_numeric(df['Close'], errors='coerce')  # Convert to float, errors='coerce' will turn invalid values to NaN
-        
-        df.index = pd.to_datetime(df.index)  # Convert the index to datetime
-        df = df.sort_index()  # Sort by date
-        
-        return df
-    else:
-        print("Error fetching data. Please check the symbol or try again.")
+    try:
+        data = response.json()
+    except Exception as e:
+        st.error(f"Error parsing JSON for {symbol}")
+        print("Raw response:", response.text)
         return None
 
+    # Log the raw response if data is missing
+    if 'Monthly Time Series' not in data:
+        st.error(f"Alpha Vantage error for {symbol}: {data.get('Note') or data.get('Error Message') or data}")
+        return None
+
+    time_series = data['Monthly Time Series']
+    df = pd.DataFrame.from_dict(time_series, orient='index')
+    df = df[['4. close']]
+    df.columns = ['Close']
+    df['Close'] = pd.to_numeric(df['Close'], errors='coerce')
+    df.index = pd.to_datetime(df.index)
+    df = df.sort_index()
+
+    return df
 
 
 def fetch_news(stock_ticker):
