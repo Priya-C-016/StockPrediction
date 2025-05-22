@@ -36,7 +36,7 @@ from textblob import TextBlob
 #         return None
 
 def fetch_stock_data(symbol):
-    API_KEY = 'C3E2CQZKSY213XAE'  # Replace with your API key
+    API_KEY = 'NA3UHC1XJU4OQKKO'  # Replace with your API key
     url = f'https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol={symbol}&apikey={API_KEY}'
     
     response = requests.get(url)
