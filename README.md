@@ -14,6 +14,8 @@ The Stock Market Prediction App is a data-driven project that leverages machine 
 - Data Visualization: Interactive charts for stock trend analysis.
 - Technical Indicators: Implemented key indicators like Moving Averages, RSI, MACD, etc.
 - User Input Support: Allows users to enter stock symbols and get predictions.
+
+- 
 ![Alt Text](https://github.com/Priya-C-016/StockPrediction/blob/main/Images/Stock.png)
 
 ![Alt Text](https://github.com/Priya-C-016/StockPrediction/blob/main/Images/stockrecommend.png)
@@ -22,19 +24,13 @@ The Stock Market Prediction App is a data-driven project that leverages machine 
 
 ## 📊 Technologies Used
 
-Python (for data analysis and ML modeling)
-
-Pandas, NumPy (for data preprocessing)
-
-Scikit-Learn (for machine learning models)
-
-Matplotlib, Seaborn, Plotly (for visualizations)
-
-Streamlit (for an interactive web app)
-
-Yahoo Finance API / Alpha Vantage API (for fetching real-time stock data)
-
-Flask / FastAPI (optional backend for API handling)
+- Python (for data analysis and ML modeling)
+- Pandas, NumPy (for data preprocessing)
+- Scikit-Learn (for machine learning models)
+- Matplotlib, Seaborn, Plotly (for visualizations)
+- Streamlit (for an interactive web app)
+- Yahoo Finance API / Alpha Vantage API (for fetching real-time stock data)
+- Flask / FastAPI (optional backend for API handling)
 
 ## 📂 Dataset
 
@@ -65,24 +61,17 @@ OR, if using Flask:
 python app.py
 ```
 ## 📈 Insights Gained
-
-Trend Analysis: Identified historical patterns that influence stock prices.
-
-Prediction Accuracy: Evaluated different ML models like Linear Regression, LSTM, and ARIMA.
-
-Impact of Market Events: Studied how news and financial events affect stock movements.
-
-Volatility Measurement: Used historical data to assess market risks.
+- **Trend Analysis** – Identified historical patterns that influence stock prices  
+- **Prediction Accuracy** – Evaluated different ML models like Linear Regression, LSTM, and ARIMA  
+- **Impact of Market Events** – Studied how news and financial events affect stock movements  
+- **Volatility Measurement** – Used historical data to assess market risks  
 
 ## 📜 Future Improvements
 
-Implement deep learning models (LSTM, RNNs) for better time-series forecasting.
-
-Add sentiment analysis based on financial news headlines.
-
-Enhance the UI with real-time interactive dashboards.
-
-Provide stock recommendations based on risk assessment and trends.
+- [ ] Implement deep learning models (**LSTM**, **RNNs**) for better time-series forecasting  
+- [ ] Add **sentiment analysis** based on financial news headlines  
+- [ ] Enhance the **UI** with real-time interactive dashboards  
+- [ ] Provide **stock recommendations** based on risk assessment and trends.
 
 ## 🏆 Contributions
 
