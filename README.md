@@ -15,7 +15,7 @@ The Stock Market Prediction App is a data-driven project that leverages machine 
 - Technical Indicators: Implemented key indicators like Moving Averages, RSI, MACD, etc.
 - User Input Support: Allows users to enter stock symbols and get predictions.
 
-- 
+ 
 ![Alt Text](https://github.com/Priya-C-016/StockPrediction/blob/main/Images/Stock.png)
 
 ![Alt Text](https://github.com/Priya-C-016/StockPrediction/blob/main/Images/stockrecommend.png)
