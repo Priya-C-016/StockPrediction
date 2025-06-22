@@ -4,7 +4,7 @@
 The Stock Market Prediction App is a data-driven project that leverages machine learning and real-time financial data to predict stock prices and trends. It integrates APIs for fetching live stock market data and utilizes visualization tools to help users analyze stock performance.
 
 
-![Alt Text](Dashboard.png)
+![Alt Text](https://github.com/Priya-C-016/StockPrediction/blob/main/Images/Dashboard.png)
 
 ## 🔍 Features
 
@@ -20,11 +20,11 @@ Technical Indicators: Implemented key indicators like Moving Averages, RSI, MACD
 
 User Input Support: Allows users to enter stock symbols and get predictions.
 
-![Alt Text](Stock.png)
+![Alt Text](https://github.com/Priya-C-016/StockPrediction/blob/main/Images/Stock.png)
 
-![Alt Text](stockrecommend.png)
+![Alt Text](https://github.com/Priya-C-016/StockPrediction/blob/main/Images/stockrecommend.png)
 
-![Alt Text](news.png)
+![Alt Text](https://github.com/Priya-C-016/StockPrediction/blob/main/Images/news.png)
 
 ## 📊 Technologies Used
 
